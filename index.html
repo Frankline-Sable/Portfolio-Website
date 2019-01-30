@@ -1,0 +1,823 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="portfolio, frankline,franklin,sable,jo">
+    <meta name="description" content="Frankline Sable Portfolio">
+    <title>Frankline's| Portfolio Website</title>
+    <script type="text/javascript" src="styles/JQuery/jquery-3.3.1.min.js"></script>
+    <!--    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    -->
+
+    <link href="styles/w3css/w3.css" rel="stylesheet">
+    <link href="styles/fontawesome/css/all.css" rel="stylesheet">
+    <link href="styles/fontawesomeold/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132343908-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132343908-1');
+    </script>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://fs.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/fs.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://fs.matomo.cloud/piwik.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+</head>
+
+<body>
+
+<header class="hero w3-text-white w3-center"
+        id="home">
+    <div class="hero-content-m">
+        <h1>FRANKLINE SABLE</h1>
+        <h4 class="w3-large">COMPUTER TECHNOLOGY GRADUATE FROM MASENO UNIVERSITY</h4>
+        <h1 class="big-head"></h1>
+        <br><br><br>
+        <a href="files/RESUME-FRANKLINEODERO.pdf">
+            <button class="w3-padding-xlarge w3-btn w3-border-white w3-border w3-transparent w3-hover-white"
+                    id="dwn_btn"
+                    style="vertical-align:middle"><span>DOWNLOAD CV </span>
+            </button>
+        </a>
+    </div>
+
+    <div class="hero-content-b">
+        <p style="margin-bottom: 64px">learn more about me</p>
+
+        <a class="scroll-link" href="#_sec_about">
+            <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
+                <g fill="none" fill-rule="evenodd">
+                    <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"></rect>
+                    <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"></circle>
+                </g>
+            </svg>
+        </a>
+    </div>
+</header>
+
+<nav class="w3-top w3-padding-xxlarge w3-white w3-wide w3-card">
+    <div class="logo_container">
+        <img src="images/logo2.png" alt="LOGO" width="128" height="43" class="logo">
+        <span style="visibility: hidden">Hidded text</span>
+    </div>
+    <div class="hamburger" onClick="showMenu(this);" id="ham">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</nav>
+
+<aside class="w3-card-12 icon-bar w3-clear" id="sideNav">
+    <a class="active scroll-down" href="#home" onMouseOver="showTip(1);" onmouseleave="hideTip(1);"><i
+            class="fas fa-home fa-3x"></i>
+        <div id="tip1" class="w3-animate-zoom tip">Home</div>
+    </a>
+    <a href="#_sec_about" class="scroll-down" onMouseOver="showTip(2);" onmouseleave="hideTip(2);"><i
+            class="fas fa-user fa-3x"></i>
+        <div id="tip2" class="w3-animate-zoom tip">About</div>
+    </a>
+    <a href="#_sec_skills" class="scroll-down" onMouseOver="showTip(3);" onmouseleave="hideTip(3);"><i
+            class="fas fa-code fa-3x"></i>
+        <div id="tip3" class="w3-animate-zoom tip">Skills</div>
+    </a>
+    <a href="#_sec_resume" class="scroll-down" onMouseOver="showTip(4);" onmouseleave="hideTip(4);"><i
+            class="fas fa-file-pdf fa-3x"></i>
+        <div id="tip4" class="w3-animate-zoom tip">My Resume</div>
+    </a>
+    <a href="#_sec_port" class="scroll-down" onMouseOver="showTip(5);" onmouseleave="hideTip(5);"><i
+            class="fas fa-project-diagram fa-3x"></i>
+        <div id="tip5" class="w3-animate-zoom tip">Portfolio / Projects</div>
+    </a>
+    <a href="#_sec_contact" class="scroll-down" onMouseOver="showTip(6);" onmouseleave="hideTip(6);"><i
+            class="fas fa-address-card fa-3x"></i>
+        <div id="tip6" class="w3-animate-zoom tip">Contact me</div>
+    </a>
+</aside>
+
+<main class="">
+
+    <div style="visibility:hidden; width: 100%;height: 64px" id="_sec_about" class="hide w3-red">HiddenFromView</div>
+    <section class="w3-row-padding w3-border-bottom w3-padding-32 w3-center w3-clear me_me">
+        <article class="w3-quarter w3-border-right w3-margin-bottom">
+            <strong class="w3-large" style="font-weight:300">Nationality</strong><br>
+            <img src="images/Kenya_48px.png" alt="?" width="24" height="24"> Kenyan
+        </article>
+
+        <article class="w3-quarter w3-border-right w3-margin-bottom">
+            <strong class="w3-large" style="font-weight:300">Email</strong><br>
+            <img src="images/Gmail_48px.png" alt="?" width="24" height="24">
+            <a href="mailto:franklineodero@gmail.com">
+                franklineodero@gmail.com
+            </a>
+        </article>
+        <article class="w3-quarter w3-border-right w3-margin-bottom">
+            <strong class="w3-large" style="font-weight:300">Phone</strong><br>
+            <img src="images/Android_48px.png" alt="?" width="24" height="24">
+            <a href="tel:+254716843583">
+                (+254)716843583</a>
+        </article>
+        <article class="w3-quarter w3-border-right">
+            <strong class="w3-large" style="font-weight:300">GitHub</strong><br>
+            <img src="images/GitHub_48px.png" alt="?" width="24" height="24">
+            <a href="https://github.com/Frankline-Sable" class="">FranklineSable/GitHub</a>
+        </article>
+    </section>
+
+    <section class="block w3-container  w3-row-padding w3-margin-top w3-clear">
+        <h2>About Me / <span>Who Am I</span>
+        </h2>
+        <div class="w3-half onlyme">
+            <figure class="w3-center">
+                <img src="images/me1.jpg" width="356" height="255" alt="My Image" id="me"
+                     class="w3-hover-grayscale">
+                <figcaption class="w3-padding">
+                    <p class="w3-small w3-hide-small w3-hide-medium w3-opacity" style="visibility: hidden">If you want
+                        to live your life in a creative way, as an artist, you have to not look back too
+                        much. You have to be willing to take whatever you've done and whoever you were and throw them
+                        away</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="w3-half w3-center me-details">
+            <p><span class="w3-large">Hallo world!</span> Welcome to my portfolio website! I'm a recent graduate from
+                Maseno
+                University with a degree in Computer Technology. Since I graduated in Decemeber 2018, I have worked on
+                software and hardware problems revolving around information systems</p>
+            <hr style="width: 50%;float: left">
+            <p class="par">However, I'm a person of a thousand interests, whereby excitingly, I have delved into the
+                realm of
+                animations, Game development and Video Editing. I believe: Knowledge of computer science is the modern
+                superpower
+                and
+                I would really like to make world a better place by using it.</p>
+            <hr style="width: 50%; float: right">
+            <p>My passion is Artificiial Intelligence(Machine Learning), Data Science and Programming(Software
+                Engineering)
+                - a geek by nature <img src="images/nerd-3.png" width="24" height="24" alt="!!!"> and proud of
+                it!<img
+                        src="images/happy-1.png" width="24" height="24" alt=":P">
+                I am primarily interested in Artificial Intelligence and programming. I also love doing video editing,
+                graphics design and video game design either professionally or as a hobby.
+            </p>
+        </div>
+    </section>
+
+    <div style="visibility:hidden; width: 100%;height: 60px" id="_sec_skills" class="hide w3-red">HiddenFromView</div>
+
+    <section class="block w3-container w3-clear myskills">
+        <h2>Skills / <span>What I know</span></h2>
+        <article class="w3-roo-padding w3-center w3-clear">
+            <div class="" style="float: left">
+                <h5 style="font-weight: 600;opacity: 0.7;text-decoration-style: double;text-decoration-line: overline;text-decoration-color: rgba(80, 169, 209,0.6);">
+                    Programming Languages</h5>
+                <p>I have learn't lots of important aspects of computing throughout my years in school. For example, I
+                    have learnt about data mining, pattern recognition, multithreading, mobile computing, GUI (Graphical
+                    User Interface) development, scheduling etc. I am comfortable with object oriented languages such as
+                    Java. I also enjoy powerful low level languages such as C and assembly.</p>
+            </div>
+
+            <div class="" style="float: left">
+                <ul class="lang">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>pHp</li>
+                    <li>Javascript</li>
+                    <li>Angular</li>
+                    <li>Node Js</li>
+                    <li class="sep">
+                        <hr>
+                    </li>
+
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>SQL</li>
+                    <li class="sep">
+                        <hr>
+                    </li>
+
+                    <li>Matlab</li>
+                    <li>Android</li>
+                    <li>Unix</li>
+                    <li class="sep">
+                        <hr>
+                    </li>
+                    <li>Git</li>
+                    <li>VHDL</li>
+                    <li>Assembly(ASL)</li>
+                    <li>Embedded C</li>
+                </ul>
+            </div>
+        </article>
+        <br>
+        <article class="w3-row-padding w3-center w3-clear">
+            <div class="w3-col s12 m6 l6">
+                <h5 style="font-weight: 600;opacity: 0.7;text-decoration-style: double;text-decoration-line: overline;text-decoration-color: rgba(80, 169, 209,0.6);">
+                    Operating Systems (OS)</h5>
+                <p>I consider myself a '<em>techno-enthusiast</em>', love
+                    keeping up-to-date with current emerging technologies. Love exploring the various devices
+                    ecosystems, that has led me to be an expert in flashing android phones, jailbreak
+                    IOS(+troubleshooting) or even root a mobile device! In addition I repair corrupted OS and also do a
+                    clean windows installation
+                </p>
+            </div>
+
+            <div class="w3-col s12 m6 l6">
+                <ul class="lang">
+                    <li>Windows 2000/VISTA/XP/7/8/8.1/10</li>
+                    <li>Linux Dists.</li>
+                    <li>Mac OS</li>
+                    <li>Unix</li>
+                    <li class="sep">
+                        <hr>
+                    </li>
+                    <li>Android</li>
+                    <li>Symbian OS</li>
+                </ul>
+            </div>
+        </article>
+        <br>
+        <article class="w3-row-padding w3-center w3-clear">
+            <div class="" style="float: right">
+                <h5 style="font-weight: 600;opacity: 0.7;text-decoration-style: double;text-decoration-line: overline;text-decoration-color: rgba(80, 169, 209,0.6);">
+                    Applications</h5>
+                <p>Most of these applications I've interacted with them both personally and at school. I have a very
+                    keen
+                    eye for aesthetics and very much enjoy design overall. I have produced numerous 3D
+                    graphics and logos for some projects and other users. I am up to date with the latest trends in
+                    graphic design and I have a very modern feel to my designs. I also have interest in hardware
+                    circuits
+                    design and mobile development. </p>
+            </div>
+
+            <div class="" style="float: right">
+                <ul class="lang">
+                    <li>Adobe Suites</li>
+                    <li>Archicad</li>
+                    <li>Autodesk</li>
+                    <li>Blender</li>
+                    <li>GIMP</li>
+                    <li>Unity</li>
+                    <li class="sep">
+                        <hr>
+                    </li>
+
+                    <li>Labview</li>
+                    <li>Multism</li>
+                    <li>Proteus</li>
+                    <li>CiscoPacket Tracer</li>
+                    <li class="sep">
+                        <hr>
+                    </li>
+
+                    <li>Android SDK/NDK</li>
+                    <li>Anaconda Dist</li>
+                    <li>JetbrainsIDEs</li>
+                    <li>Visual Studio</li>
+                    <li class="sep">
+                        <hr>
+                    </li>
+
+                    <li>Office Packages</li>
+                    <li>VMWare Workstation</li>
+
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <section class="w3-center w3-text-white w3-display-container w3-opacity-min" id="sec-a">
+        <div class="w3-display-middle w3-hide-small">
+            <p class="w3-xlarge w3-text-shadow-white"><sup><i class="fas fa-quote-left w3-xlarge"></i></sup> When
+                something is important
+                enough, you do it even if the odds are not in your favor <sup><i
+                        class="fas fa-quote-right w3-small"></i></sup></p>
+            <h6>-Elon Musk-(Founder of Tesla and CEO of SpaceX)</h6>
+        </div>
+        <div class="w3-display-middle w3-hide-large w3-hide-medium">
+            <p class="w3-large w3-text-shadow-white"><sup><i class="fas fa-quote-left w3-large"></i></sup> When
+                something is important
+                enough, you do it even if the odds are not in your favor <sup><i
+                        class="fas fa-quote-right w3-small"></i></sup></p>
+            <h6 class="w3-tiny">-Elon Musk-(Founder of Tesla and CEO of SpaceX)9</h6>
+        </div>
+    </section>
+
+    <div style="visibility:hidden; width: 100%;height: 64px" id="_sec_resume" class="hide w3-red">HiddenFromView</div>
+    <section class="w3-container w3-clear myresume block">
+        <h2 class="">Resume / <span>Qualifications</span></h2>
+        <div class="w3-round w3-padding-medium resumebook w3-border-bottom">
+
+            <div class="book-contents">
+                <div class="w3-clear work w3-margin-bottom">
+                    <h4>Work Experience</h4>
+                    <div class="w3-row-padding w3-clear w3-margin-bottom">
+                        <article class="w3-col s12 m6 l6 w3-margin-bottom">
+                            <span><b>Freelancing</b></span><br>
+                            <span><i><b>Free lance software developer</b></i></span><br>
+                            <span>Nairobi, Kenya</span><br>
+                            <span>December 2018 - present</span><br>
+                            <ul>
+                                <li>Created a working online Census website with PHP, JavaScript, HTML, CSS and Wamp
+                                    Server.
+                                    Built and maintained a working database for the website
+                                </li>
+                                <li>Created several Android Apps, a task reminder and an online medical tips Apps, also
+                                    created
+                                    a game with unity.
+                                </li>
+                                <li>I designed a working door lock security system circuit, using an embedded system.
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="w3-col s12 m6 l6 w3-margin-bottom">
+                            <span><b>National Industrial Training Authority(NITA)</b></span><br>
+                            <span><i><b>ICT Intern</b></i></span><br>
+                            <span>Nairobi, Kenya</span><br>
+                            <span>May 2018 - July 2018</span><br>
+                            <ul>
+                                <li>Daily diagnosis, servicing and maintenance of the office computers</li>
+                                <li>Network and router configurations plus troubleshooting</li>
+                                <li>Operating systems installation on various end devices (smartphones, workstations)
+                                    and intermediary devices (routers)
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="w3-row-padding w3-clear w3-margin-bottom">
+                        <article class="w3-col s12 m6 l6 w3-margin-bottom">
+                            <span><b>Google</b></span><br>
+                            <span><i><b>Google Development Group(GDG) Participant</b></i></span><br>
+                            <span>Kisumu, Kenya</span><br>
+                            <span>May 2017</span><br>
+                            <ul>
+                                <li>One of the 50 participants in the hackathon</li>
+                                <li>Learned about Android programming, Google home and enterprise applications with
+                                    Google and open sources
+                                </li>
+                                <li>Also worked on a firebase realtime message up in a team</li>
+                            </ul>
+                        </article>
+
+                        <article class="w3-col s12 m6 l6">
+                            <span><b>Intel's Artificial Intelligence</b></span><br>
+                            <span><i><b>Intel Deep Learning SDK Workshop participant</b></i></span><br>
+                            <span>Maseno University</span><br>
+                            <span>September 2017</span><br>
+                            <ul>
+                                <li>This is where i become passionate about AI</li>
+                                <li>We were given remote access to Intel Servers</li>
+                                <li>Learnt about intel's optmized frameworks for deep learning</li>
+                                <li>Also gained more knownledge in how an Ai works i.e(Senses &#8649 Reason &#8649 Act
+                                    &#8649 Adapt
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="w3-row-padding">
+                    <article class="w3-col s12 m6 l6">
+                        <h4>Education</h4>
+                        <br>
+                        <div class="w3-margin-bottom">
+                            <img style="vertical-align: middle" src="images/MasenoUniversityLogo.png" alt="logo"
+                                 width="64"
+                                 height="64" class="">
+                            <span style="padding: 8px;font-weight: 400;font-size: 14px"
+                                  class="w3-wide w3-text-black w3-text-shadow">Maseno University</span><br>
+                            <div class="w3-padding-4">
+                                <span><i><b>Bsc. Computer Technology</b></i></span><br>
+                                <span>Nairobi, Kenya</span><br>
+                                <span>September 2014 - December 2018</span><br>
+                                <span><em>->Second Class Upper Division</em></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <img style="vertical-align: middle" src="images/wantech.png" alt="logo" width="64"
+                                 height="64"
+                                 class="">
+                            <span style="padding: 8px;font-weight: 400;font-size: 14px"
+                                  class="w3-wide w3-text-black w3-text-shadow">Wantech Computer College</span><br>
+                            <div class="w3-padding-4">
+                                <span><i><b>Certificate in Information Technology</b></i></span><br>
+                                <span>Nairobi, Kenya</span><br>
+                                <span>June 2014 - September 2018</span><br>
+                                <span><em>->Order of Merit</em></span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="w3-col s12 m6 l6 course-work">
+                        <h4>Relevant Coursework:</h4>
+                        <ul>
+                            <li>Data mining <span>(cct 416)</span></li>
+                            <li>Expert Systems <span>(cct 426) </span></li>
+                            <li>Computer systems Engineering <span>cct 412</span></li>
+                            <li>Neural Networks <span>(cct 411)</span></li>
+                            <li>Intelligent Agents <span>(cct 419)</span></li>
+                            <li>Simulation and modeling <span>(cct 417)</span></li>
+                            <li>Operating Systems <span>(cct 204)</span></li>
+                            <li>Signals and Systems <span>(cct 214)</span></li>
+                            <li>Electronics <span>(cct 213)</span></li>
+                            <li>Embedded Systems <span>(cct 315)</span></li>
+                            <li>Engineering Mathematics <span>(cct 208)</span></li>
+                            <li>Digital Electronics <span>(cct 202)</span></li>
+                            <li>Data Structures and Algorithms <span>(cct 204)</span></li>
+                            <li>Software Engineerung <span>(cct 308)</span></li>
+                            <li>Applied Probability and Statistics <span>(cct 216)</span></li>
+                            <li>Analog Communication Systems <span>(cct 315)</span></li>
+                            <li>Digital Communication Systems <span>(cct 316)</span></li>
+                            <li>Fibre Optics: Theory and Applications <span>(cct 433)</span></li>
+                            <li>Human Computer Interaction <span>(cct 304)</span></li>
+                            <li>Mobile Computing <span>(cct 306)</span></li>
+                            <li>Cisco Networking I-IV <span>(CCNA)</span></li>
+                        </ul>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <div style="visibility:hidden; width: 100%;height: 64px" id="_sec_port" class="hide w3-red">HiddenFromView</div>
+    <section class="w3-container  w3-clear block" id="portfolio">
+        <h2>Portfolio</h2>
+        <section class=" w3-margin-left w3-margin-right tab_select w3-white">
+            <div class="w3-right-align w3-text-blue w3-text-shadow-white w3-wide w3-wide"><h5 class="w3-text-shadow">My
+                Works</h5></div>
+            <div class="w3-row">
+                <div class="w3-col l2 m2 s2 w3-padding tablink active_tab  w3-leftbar w3-border-black"
+                     onclick="openTab(event, 'tab1', this.id);" id="event_1">
+                    <div>
+                        <i class="fas fa-code fa-2x"></i> <span class="w3-hide-small"><b>Coding</b></span>
+                    </div>
+                </div>
+                <div class="w3-col l2 m2 s2 w3-padding tablink normal_tab"
+                     onclick="openTab(event, 'tab2', this.id);" id="event_2">
+                    <div>
+                        <i class="fas fa-hammer fa-2x"></i> <span class="w3-hide-small"><b>Hardware</b></span>
+                    </div>
+                </div>
+                <div class="w3-col l2 m2 s2 w3-padding tablink normal_tab"
+                     onclick="openTab(event, 'tab3', this.id);" id="event_3">
+                    <div>
+                        <i class="fas fa-laptop-code fa-2x"></i> <span class="w3-hide-small"><b>Web</b></span>
+                    </div>
+                </div>
+                <div class="w3-col l2 m2 s2 w3-padding tablink normal_tab"
+                     onclick="openTab(event, 'tab4', this.id);" id="event_4">
+                    <div>
+                        <i class="fas fa-gamepad fa-2x"></i> <span class="w3-hide-small"><b>Gaming</b></span>
+                    </div>
+                </div>
+                <div class="w3-col l2 m2 s2 w3-padding tablink normal_tab"
+                     onclick="openTab(event, 'tab5', this.id);" id="event_5">
+                    <div>
+                        <i class="fas fa-paint-brush fa-2x"></i> <span class="w3-hide-small"><b>Design</b></span>
+                    </div>
+                </div>
+                <div class="w3-col l2 m2 s2 w3-padding tablink normal_tab w3-rightbar w3-border-black"
+                     onclick="openTab(event, 'tab6', this.id);" id="event_6">
+                    <div>
+                        <i class="fa fa-android fa-2x"></i> <span class="w3-hide-small"><b>Android</b></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <section class="w3-row-padding tab w3-border-bottom" id="tab1" style="padding-bottom: 48px;">
+            <div class="w3-half ">
+                <article class="w3-card-2 w3-round" style="cursor:pointer;position: relative;width: 100%">
+                    <img src="images/code1.png" class="w3-image  w3-round" width="300" height="200"
+                         alt="Number pattern recognizer" onclick="javascript:showImage(this)">
+                    <div class="top-title">
+                        <h4 class="w3-padding-tiny">Image Recognition System(AI)</h4>
+                    </div>
+                </article>
+            </div>
+            <div class="w3-half w3-row-padding">
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/code2.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="Random Walk Algorithm">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Random walk algorithm</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/code3.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="BFS Forest">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Breadth-First-Trees forest</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/code4.png" width="300" height="200" class="w3-round-large w3-image w3-border"
+                         alt="Web Scraper Program">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Webscraper</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/code5.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="Gui Python Animations">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">GUI Python animations</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="w3-row-padding tab w3-border-bottom" id="tab2" style="padding-bottom: 48px; display: none;">
+            <div class="w3-half ">
+                <article class="w3-card-2 w3-round" style="cursor:pointer;position: relative;width: 100%">
+                    <img src="images/hw1.png" class="w3-image  w3-round" width="300" height="200"
+                         alt="Uses a micro-controller and infrared censors to control traffic based on the density"
+                         onclick="javascript:showImage(this)">
+                    <div class="top-title">
+                        <h4 class="w3-padding-tiny">Four Way(Intersection) Density Based Traffic Light Controller</h4>
+                    </div>
+                </article>
+            </div>
+            <div class="w3-half w3-row-padding">
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/hw2.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="Calculator made purely from encoders">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Pure Hardware Calculator</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/hw3.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="Door lock system">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Smart Door Lock System</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/hw4.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="circuit traffic controller">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Circuitry the traffic Controller</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/hw5.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="water level indicator">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Water Level Indicator & Controller</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="w3-row-padding tab w3-border-bottom" id="tab3" style="padding-bottom: 48px; display: none;">
+            <div class="w3-half ">
+                <article class="w3-card-2 w3-round" style="cursor:pointer;position: relative;width: 100%">
+                    <img src="images/web1.jpg" class="w3-image  w3-round" width="300" height="200"
+                         alt="(Concept)Replace the manual census registration with a digital platform"
+                         onclick="javascript:showImage(this)">
+                    <div class="top-title">
+                        <h4 class="w3-padding-tiny">Digital Census Website</h4>
+                    </div>
+                </article>
+            </div>
+            <div class="w3-half w3-row-padding">
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/web2.png" width="300" height="200" alt="This Portfolio"
+                         class="w3-round-large w3-image">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">This Portfolio</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/web3.png" width="300" height="200" alt="Freeware software website"
+                         class="w3-round-large w3-image w3-border">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Freeware software's website</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/web4.png" width="300" alt="image upload concept" height="200"
+                         class="w3-round-large w3-image w3-border">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Demonstrating image upload concept</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="w3-row-padding tab w3-border-bottom" id="tab4" style="padding-bottom: 48px; display: none;">
+            <div class="w3-half ">
+                <article class="w3-card-2 w3-round" style="cursor:pointer;position: relative;width: 100%">
+                    <img src="images/game1.png" class="w3-image  w3-round" width="300" height="200"
+                         alt="Created a  cross-platform runner game with unity" onclick="javascript:showImage(this)">
+                    <div class="top-title">
+                        <h4 class="w3-padding-tiny">Box Runner Game With (Unity and C#)</h4>
+                    </div>
+                </article>
+            </div>
+            <div class="w3-half w3-row-padding">
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/game2.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="brickbreaker">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">BrickBreaker with python</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/game3.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="bet turtle">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Turtle bet game with python</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/game4.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="stealth game">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Stealth Game with unity</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/game5.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="flappy pacman">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Flappy PacMan Python</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="w3-row-padding tab w3-border-bottom" id="tab5" style="padding-bottom: 48px; display: none;">
+            <div class="w3-half ">
+                <article class="w3-card-2 w3-round" style="cursor:pointer;position: relative;width: 100%">
+                    <img src="images/render1.png" class="w3-image  w3-round" width="300" height="200"
+                         alt="Huge Bridge in Mists render made with blender" onclick="javascript:showImage(this)">
+                    <div class="top-title">
+                        <h4 class="w3-padding-tiny">Huge Bridge In Mist Render, With Blender</h4>
+                    </div>
+                </article>
+            </div>
+            <div class="w3-half w3-row-padding">
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/render2.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="modern classromm">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Modern Classroom render</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/render3.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="creepy tunnel">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Creepy Tunnel render</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/render4.png" width="300" height="200" class="w3-round-large w3-image"
+                         alt="modern bathroom">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Modern Bathroom render</div>
+                    </div>
+                </article>
+                <article class="w3-half  w3-padding-small container-pf">
+                    <img src="images/render5.jpg" width="300" height="200" class="w3-round-large w3-image"
+                         alt="city paint">
+                    <div class="overlay-pf w3-round-large">
+                        <div class="text">Epic Virtual City Paint</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="w3-row-padding tab w3-border-bottom" id="tab6" style="padding-bottom: 48px; display: none;">
+            <article class="w3-border w3-center w3-xlarge w3-card-2">
+                <div class="w3-row-padding w3-blue"
+                     style="padding: 32px 32px; background: linear-gradient(to bottom, #0099cc 0%, #ff6666 100%);">
+
+                    <div class="w3-quarter">
+                        <img src="images/mobile/p1.png" alt="Screen 1">
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="images/mobile/p2.png" alt="Screen 2">
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="images/mobile/p3.png" alt="Screen 3">
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="images/mobile/p4.png" alt="Screen 4">
+                    </div>
+                </div>
+                <div style="font-weight: 400" class="w3-medium w3-left-align w3-container"><strong>Political
+                    App</strong> is
+                    an upcoming app that am working on
+                    which is mainly focused towards young people. Nowadays young people are less exposed on what's
+                    happening
+                    around the country, thus due to this, I am creating an app where users by can voice their opinions
+                    and
+                    be
+                    updated on what's happening based in the political aspect...
+                </div>
+            </article>
+        </section>
+
+    </section>
+
+    <div style="visibility:hidden; width: 100%;height: 64px" id="_sec_contact" class="hide w3-red">HiddenFromView</div>
+    <section class="w3-container w3-clear block" style="margin-bottom: 32px">
+        <div class="w3-row-padding">
+            <fieldset style="border-bottom: 0; border-left: 0;">
+                <legend class="w3-wide w3-large"><h2>Contact <span>Me</span></h2></legend>
+                <br>
+                <article class="w3-col l6 s12 w3-center w3-small">
+                    <br>
+                    <i class="fas fa-heart  fa-4x w3-text-red"></i>
+                    <i class="fas fa-plus fa-2x w3-text-black"></i>
+                    <img src="images/nerd-3.png" width="32" height="32">
+                    <i class="fas fa-equals fa-2x w3-text-black"></i>
+                    <i class="fas fa-phone  fa-4x w3-text-blue"></i>
+                    <p class="w3-large">Thanks for visiting, Feel free to make any inquiries directly to me about
+                        anything you see here.</p>
+                    <!-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="frankline-sable"><a class="LI-simple-link" href='https://ke.linkedin.com/in/frankline-sable?trk=profile-badge'>Frankline Sable</a></div>-->
+                </article>
+
+                <article class="w3-col l6 s12 w3-border-left">
+                    <form class="w3-form" enctype="text/plain" method="post" action="mailto:franklineodero@gmail.com"
+                          autocomplete="off">
+                        <label>
+                            Your Name <span class="w3-text-red">*</span>
+                            <input type="text" class="w3-input w3-animate-input" required>
+                        </label>
+                        <br>
+                        <label>Email <span class="w3-text-red">*</span>
+                            <input type="email" class="w3-input w3-animate-input" required>
+                        </label>
+                        <br>
+                        <label>Message <span class="w3-text-red">*</span>
+                            <textarea class="w3-input w3-border" style="resize:none" required></textarea>
+                        </label>
+                        <br>
+                        <input type="submit" class="w3-blue-gray w3-input w3-btn-block w3-hover-blue"
+                               style="background-color: #9B7653"
+                               id="_contactUs" value="Send">
+                    </form>
+                </article>
+            </fieldset>
+        </div>
+    </section>
+
+
+</main>
+
+<footer class="w3-padding-24 w3-center w3-text-white" style="background-color: #111111;">
+    <b>&copy; Frankline Sable 2019</b>
+    <div class="w3-right w3-large social" style="margin-right: 48px">
+        <a href="https://github.com/Frankline-Sable"><i class='fa fa-github'></i></a>
+        <a href="https://www.linkedin.com/in/frankline-sable"><i class='fa fa-linkedin'></i></a>
+        <a href="https://www.youtube.com/channel/UCN_d-ax6_9zPWgSuRUYn-QA"><i class='fa fa-youtube-play'></i></a>
+        <a href="https://www.instagram.com/lensesable"><i class='fa fa-instagram'></i></a>
+    </div>
+</footer>
+</body>
+</html>
